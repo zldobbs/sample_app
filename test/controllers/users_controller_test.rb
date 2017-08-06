@@ -7,7 +7,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    get signup_path
+    get new_path
     assert_response :success
     assert_select "title", "Sign Up | #{@base_title}"
   end
