@@ -13,6 +13,8 @@
   </head>
 
   <body>
+
+    <!-- Header -->
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <%= link_to "sample app", root_path, id: "logo" %>
@@ -20,14 +22,30 @@
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "Help", help_path %></li>
-            <li><%= link_to "Contact", contact_path %></li>
-            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "Log In", "#" %></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <!-- Page Content -->
     <div class="container">
       <%= yield %>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <small>
+        The <a href="http://www.railstutorial.org/">Rails Sample App</a>
+        by: <a href="mailto:zld6fd@mail.missouri.edu">Zachary Dobbs</a>
+      </small>
+      <nav>
+        <ul>
+          <li><%= link_to "Contact", contact_path %></li>
+          <li><%= link_to "About", about_path %></li>
+        </ul>
+      </nav>
+    </footer>
+
   </body>
 </html>
