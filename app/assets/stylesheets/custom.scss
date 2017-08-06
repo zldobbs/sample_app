@@ -15,10 +15,9 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,7 +61,7 @@ p {
 }
 
 footer {
-  margin-top: 45px;
+  margin: 45px;
   padding-top: 5px;
   border-top: 1px solid $gray-light;
   color: $gray-light;
@@ -71,13 +70,13 @@ footer {
     &:hover {
       color: $gray-darker;
     }
-    small {
-      float: left;
-    }
-    ul {
-      float: right;
-      list-style: none;
-    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
     li {
       float: left;
       margin-left: 15px;
